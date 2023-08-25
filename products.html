@@ -1,0 +1,324 @@
+<!-- <html> -->
+<head>
+  <link rel="stylesheet" href="gstyle.css" />
+  <link
+    href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+   body{
+    background-image: url('images/bg_3.jpg');
+   }
+    *{
+margin: 0;
+padding: 0;
+}
+      a{
+text-decoration: none;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+width: 100vw;
+padding-top: 2%;
+padding-bottom: 2%;
+background-color: #4f4848;
+font-size: 20px;
+}
+/* Toggle button */
+
+.navbar_toggle {
+margin-left: 5%;
+font-size: 30px;
+color: #ffffff;
+background: transparent;
+border-color: transparent;
+transition: all 0.3s linear;
+cursor: pointer;
+display: none;
+}
+.logo{
+margin-left: 5%;
+color: #ffffff;
+font-size: 25px;
+font-weight: bold;
+}
+.logo_header{
+display: flex;
+margin-left: 2%;
+}
+
+.main_nav{
+display: flex;
+width: 50%;
+float: right;
+margin-right: 2%;
+justify-content: space-between;
+list-style: none;
+}
+.main_nav li:hover{
+background-color: #c8a97e;
+}
+
+.main_nav li{
+display: inline;
+color: #ffffff;
+}
+.main_nav li a{
+color: #ffffff;
+}
+
+@media only screen and (max-width : 992px){
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #a88787;
+  font-size: 20px;
+}
+
+.main_nav{
+  display: none;
+}
+
+.show_nav{
+  padding-top: 2%;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main_nav li{
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  justify-content: center;
+  text-align: center;
+  padding: 0%;
+}
+.navbar_toggle {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: block;
+}}
+  </style>
+</head>
+<body>
+    <!-- navigation starts -->
+  
+  <div id="section2" class="section2">
+    <br />
+    <h1 style="text-align: center; color: #c8a97e;">Cakes Gallery</h1>
+    <br />
+    <div class="container">
+      <div class="items">
+        <div class="img img1">
+          <img src="CTC.jpg" alt="CTC"/>
+        </div>
+        <div class="name">Chocolate Truffle</div>
+        <div class="price">Rs.300</div>
+        <div class="info">chocolate overloaded cream</div>
+      </div>
+      <div class="items">
+        <div class="img img2">
+          <img src="Pine.jpg"alt="pine"/>
+        </div>
+        <div class="name">Pineapple cake</div>
+        <div class="price">Rs.40</div>
+        <div class="info">Pineaple flavour.</div>
+      </div>
+      <div class="items">
+        <div class="img img3">
+          <img src="black forest.jpg" alt="Black"/>
+        </div>
+        <div class="name">Black Forest Cake</div>
+        <div class="price">Rs.550</div>
+        <div class="info">with whipped cream.</div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="white.webp"  alt=""/>
+        </div>
+        <div class="name">White Forest Cake</div>
+        <div class="price">Rs.590</div>
+        <div class="info">With white chocolate.</div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="Red.webp" alt=""/>
+        </div>
+        <div class="name">Red Velvet Cake</div>
+        <div class="price">Rs.650</div>
+        <div class="info">Tempting Red Velvet customizable.</div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="butter.jpg" alt=""/>
+        </div>
+        <div class="name"> Butterscotch Cake</div>
+        <div class="price">Rs.599</div>
+        <div class="info">Smooth like Butter!!</div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="fruit.webp"  alt="fruit"/>
+        </div>
+        <div class="name">Fruit cake</div>
+        <div class="price">Rs500</div>
+        <div class="info">With Delicious fruits.</div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="pinata.jpg" alt="pinata" />
+        </div>
+        <div class="name">Pinata cake</div>
+        <div class="price">Rs.600</div>
+        <div class="info">
+          With Suprise cake inside.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="fond.webp" alt="Fondant"/>
+        </div>
+        <div class="name">Fondant cake</div>
+        <div class="price">Rs.800</div>
+        <div class="info">
+         With customizable design.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="lunch.jpeg" alt="lunch"/>
+        </div>
+        <div class="name">Lunchbox Cake</div>
+        <div class="price">Rs.699</div>
+        <div class="info">
+          Avaliable in all flavours.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="gulab.jpg" alt="gulab"/>
+        </div>
+        <div class="name">GulabJamun cake</div>
+        <div class="price">Rs.800</div>
+        <div class="info">
+         With yummy GulabJamun.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="vanilla.webp" alt="vanilla"/>
+        </div>
+        <div class="name">Vanilla cake</div>
+        <div class="price">Rs.500</div>
+        <div class="info">
+         Customized vanilla cake for a customer.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="plum.webp" alt="plum"/>
+        </div>
+        <div class="name">Plum cake</div>
+        <div class="price">Rs.599</div>
+        <div class="info">
+         With goodness of dry fruits.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="cr.webp" alt="cr"/>
+        </div>
+        <div class="name">Christmas Butterscotch cake</div>
+        <div class="price">Rs.649</div>
+        <div class="info">
+         Christmas Special Cakes.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="rasamalai.webp" alt="Rasmalai"/>
+        </div>
+        <div class="name">Rasmalai Cake</div>
+        <div class="price">Rs.799</div>
+        <div class="info">
+         Rasmalai cream loaded.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="hazel.webp" alt="hazel"/>
+        </div>
+        <div class="name">Hazelnut cake</div>
+        <div class="price">Rs.800</div>
+        <div class="info">
+         With Crunchy hazelnuts ,chocolate.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="kitkat.jpeg" alt="kitkat"/>
+        </div>
+        <div class="name">Kitkat cake</div>
+        <div class="price">Rs.695</div>
+        <div class="info">
+         With Kitkat,chocolate loaded.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="pull.jpg" alt="pull"/>
+        </div>
+        <div class="name">Pull Up cake</div>
+        <div class="price">Rs.650</div>
+        <div class="info">
+         With customizable design.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="island.jpg" alt="island"/>
+        </div>
+        <div class="name">Island cake</div>
+        <div class="price">Rs.699</div>
+        <div class="info">
+         With customizable design!!.
+        </div>
+      </div>
+      <div class="items">
+        <div class="img img1">
+          <img src="3d.jpg" alt="3d"/>
+        </div>
+        <div class="name">3D cake</div>
+        <div class="price">Rs.799</div>
+        <div class="info">
+         With customizable design,flavour.
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+</body>
+<!-- </html> -->

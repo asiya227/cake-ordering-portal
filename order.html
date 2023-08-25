@@ -1,0 +1,311 @@
+<html>
+    <head><title>order</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cake home PHP</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+}
+      a{
+text-decoration: none;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+width: 100vw;
+padding-top: 2%;
+padding-bottom: 2%;
+background-color: #4f4848;
+font-size: 20px;
+}
+/* Toggle button */
+
+.navbar_toggle {
+margin-left: 5%;
+font-size: 30px;
+color: #ffffff;
+background: transparent;
+border-color: transparent;
+transition: all 0.3s linear;
+cursor: pointer;
+display: none;
+}
+.logo{
+margin-left: 5%;
+color: #ffffff;
+font-size: 25px;
+font-weight: bold;
+}
+.logo_header{
+display: flex;
+margin-left: 2%;
+}
+
+.main_nav{
+display: flex;
+width: 50%;
+float: right;
+margin-right: 2%;
+justify-content: space-between;
+list-style: none;
+}
+.main_nav li:hover{
+background-color: #c8a97e;
+}
+
+.main_nav li{
+display: inline;
+color: #ffffff;
+}
+.main_nav li a{
+color: #ffffff;
+}
+
+@media only screen and (max-width : 992px){
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #a88787;
+  font-size: 20px;
+}
+
+.main_nav{
+  display: none;
+}
+
+.show_nav{
+  padding-top: 2%;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main_nav li{
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  justify-content: center;
+  text-align: center;
+  padding: 0%;
+}
+.navbar_toggle {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: block;
+}}
+
+    </style>
+</head>
+<body>
+
+    <!-- navigation starts -->
+
+      <nav class="navbar">
+
+          <div class="logo_header">
+            <a href="#" class="logo">Kookie Cream</a>
+            
+            <button class="navbar_toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+      
+          
+          <ul class="main_nav">
+            <li>
+              <a href="index.html" class="nav_links">Home</a>
+            </li>
+            <li>
+                <a href="abt.html" class="nav_links">About</a>
+              </li>
+            <li>
+              <a href="gallery.html" class="nav_links">Gallery</a>
+            </li>
+            <li>
+              <a href="order.html" class="nav_links">Order</a>
+            </li>
+           
+            <li>
+              <a href="review.html" class="nav_links">Review</a>
+            </li>
+            <li>
+              <a href="tlogin.html" class="nav_links"><script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+                  <lord-icon
+                   src="https://cdn.lordicon.com/bhfjfgqz.json"
+                   trigger="hover"
+                   style="width:40px;height:40px;background-color: #c8a97e;border-radius: 5px;">
+                  </lord-icon></a>
+            </li>
+          </ul>
+      
+        </nav>
+     <!-- order a cake section starts -->
+
+     <section class="ftco-section img" id="order" style="background-image: url(images/order_bg.jpg);"
+     data-stellar-background-ratio="0.5">
+     <div class="container">
+         <div class="row d-flex">
+             <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5">
+                 <div class="heading-section ftco-animate mb-5 text-center">
+                     <span class="subheading">Order</span>
+                     <h2 class="mb-4">Your Cake</h2>
+                 </div>
+
+                 <!--form starts-->
+                 <form id="formorder" action="index.html">
+                     <div class="row">
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="name">Name</label>
+                                 <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Email</label>
+                                 <input type="email" id="email" name="email" class="form-control" placeholder="johndoe@gmail.com" required/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Address</label>
+                                 <input type="text" id="address" name="address" class="form-control" placeholder="XYZ" required/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Phone</label>
+                                 <input type="text" id="phone" name="phone" class="form-control" placeholder="9874563215" required/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Date</label>
+                                 <input type="text" id="da" name="da" class="form-control" id="book_date" placeholder="Date" required/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Time</label>
+                                 <input type="text" class="form-control" id="book_time" name="book_time" placeholder="Time" required/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Cake Flavour Description</label>
+                                 <div class="select-wrap one-third">
+                                     <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                     <input type="text" id="cFlavour" name="cFlavour" class="form-control" placeholder="Black Forest" required/>
+                                        <!-- <option value="">Black Forest</option>
+                                         <option value="">Yellow Butter Cake</option>
+                                         <option value="">Pound Cake</option>
+                                         <option value="">Red Velvet Cake</option>
+                                         <option value="">Carrot Cake</option>
+                                         <option value="">Sponge Cake</option>
+                                         <option value="">Genoise Cake</option>
+                                         <option value="">Chiffon Cake</option>
+                                     </select>  -->
+                                 </div>
+
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                                 <label for="">Kg</label>
+                                 <div class="select-wrap one-third">
+                                     <div class="icon"><span class="ios-ios-arrow-down"></span></div>
+                                     <input type="number" id="kg" name="kg" class="form-control" placeholder="1kg/1.5kg" required/>
+                                        <!-- <option value="0">0.5</option>
+                                         <option value="1">1</option>
+                                         <option value="2">1.5</option>
+                                         <option value="3">2.5</option>
+                                         <option value="4">5</option>
+                                         <option value="5">10</option>
+                                         <option value="6">Custom</option>
+                                     </select>-->
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-12 mt-3">
+                             <div class="form-group text-center">
+                                 <input type="submit" value="Order Your Cake" class="btn btn-primary py-3 px-5" onclick="validateform()">
+                             </div>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- order a cake section ends -->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/jquery-migrate-3.0.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/jquery.stellar.min.js"></script>
+ <script src="js/owl.carousel.min.js"></script>
+ <script src="js/jquery.magnific-popup.min.js"></script>
+ <script src="js/aos.js"></script>
+ <script src="js/jquery.animateNumber.min.js"></script>
+ <script src="js/bootstrap-datepicker.js"></script>
+ <script src="js/jquery.timepicker.min.js"></script>
+ <script src="js/scrollax.min.js"></script>
+ <script src="main.js"></script>
+ <script>
+    function validateform()
+{
+var name=document.getElementById('name');
+var mail=document.getElementById('email');
+var resident=document.getElementById('address');
+var number=document.getElementById('phone');
+var date=document.getElementById('da');
+var book=document.getElementById('book_time');
+var flav=document.getElementById('cFlavour');
+var k=document.getElementById('kg');
+if(name.value == "" || mail.value == "" || resident.value == "" || number.value=="" || date.value=="" || book.value=="")
+{
+ alert("This Field is required ");
+
+}
+else if(flav.value=="" || k.value==""){
+    alert("Please Enter the cake Flavour /Description and KG");
+}
+else{
+  alert("Order successful!!");
+  location.replace('index.html');
+}
+
+}
+ </script>
+ </body>
+ </html>
